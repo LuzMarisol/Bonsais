@@ -43,7 +43,8 @@ function observador() {
             var providerData = user.providerData;
             // ...
         } else {
-            console.log("no existe usuario activo")
+            contenido.innerHTML = `
+            `;
         }
     }); 
 }
