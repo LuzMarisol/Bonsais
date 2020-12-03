@@ -26,7 +26,8 @@ input[type=email] {
     width: 300px;
     height: 35px;
     font: 14px normal normal;
-    margin: 8px 0 11px 0
+    margin: 8px 0 11px 0;
+    margin-top: 20px;
 }
 input[type=password]{
     width: 300px;
@@ -43,7 +44,7 @@ button{
     border-radius: 20px;
     border: 4px;
     background-color: rgb(114, 233, 114);
-    margin-top: 50px;
+    margin-top: 100px;
 
 }
 
@@ -55,3 +56,4 @@ label {
     text-transform: uppercase;
     text-shadow: 0px 1px 0px #fff;
 }
+
