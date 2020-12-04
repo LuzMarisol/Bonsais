@@ -5,6 +5,8 @@ function registrar() {
     firebase.auth().createUserWithEmailAndPassword(email, contrasena)
         .then(function () {
             verificar();
+            alert("Registrado correctamente, por favor verifique su correo electronico para ingresar");
+            location.href = "/login/index.html";
         })
         .catch(function (error) {
             // Handle Errors here.
@@ -26,6 +28,7 @@ function ingreso() {
             location.href = "/Sistema_Bonsai/index.html";
         })
         .catch(function (error) {
+            alert("Realiza tu registro para poder iniciar sesión")
             var errorCode = error.code;
             var errorMessage = error.message;
             console.log(errorCode);
@@ -60,7 +63,6 @@ function aparece(user) {
     var user = user;
     var contenido = document.getElementById('contenido');
     if (user.emailVerified) {
-   
     }
 }
 function verificar() {

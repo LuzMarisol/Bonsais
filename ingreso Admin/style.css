@@ -20,31 +20,28 @@ body {
     margin-top: 20px;
 }
 
-h2 {
-    font-weight: 200px;
-    font-size: 32px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+h1 {
+    margin: 11px 20px 0px 0 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #fff;
 }
 
 input[type=email] {
     width: 300px;
     height: 35px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font: 14px;
+    font: 14px normal normal;
     margin: 8px 0 11px 0;
+    margin-top: 20px;
 }
 
 input[type=password] {
     width: 300px;
     height: 35px;
     font: 14px normal normal;
-    margin: 8px 0 11px 0;
-}
-
-.tit {
-    margin-top: 8px;
-    font-size: 14x;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 8px 0 11px 0
 }
 
 button {
@@ -54,6 +51,7 @@ button {
     border-radius: 20px;
     border: 4px;
     background-color: rgb(114, 233, 114);
+    margin-top: 100px;
 }
 
 label {

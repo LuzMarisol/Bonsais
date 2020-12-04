@@ -15,15 +15,16 @@
     <aside>
         <main>
             <div class="for">
-
-                <h1>Iniciar sesión</h1>
-                <input id="email2" type="email" placeholder="Ingrese email" required>
+                <h2>Inicio de sesión</h2>
+                <p class="titulos">Email</p>
+                <input id="email2" type="email" placeholder="Ingrese email" required> 
+                <p class="tit">Contraseña</p>
                 <input id="contrasena2" type="password" placeholder="Ingresa contraseña" required>
+                <p></p>
                 <button type="button" class="btn btn-secondary" value="Acceder" onclick="ingreso()">Acceder</button>
-
+                
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-                    onclick="registrar()"> Registrarse</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="registrar()"> Registrarse</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -45,7 +46,6 @@
                                 <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
                                 <button type="button" class="btn btn-secondary"
                                     onclick="registrar()">registrarse</button>
-                                <h5>*Verifique su correo electronico</h5>
                             </div>
                         </div>
                     </div>
