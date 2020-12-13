@@ -5,10 +5,12 @@ var dataBD = firebase.database().ref('preguntasF').push();
 enviarData.addEventListener('click', preguntasF);
 function preguntasF() {
     dataBD.set({
-        pregunta: pregunta.value
+        pregunta: pregunta.value,
+        clave: dataBD.getKey(),
+        Respuesta: ""
     })
     alert("Públicado correctamente");
-    location.href = "/Sistema_Bonsai/preguntas_frecuentes.html";
+    location.href = "/Sistema_Bonsai/foro.html";
 }
 
 var config = {
@@ -32,12 +34,32 @@ var preguntasF = {};
 var arr = [];
 var visualizarP = "";
 
-firebase.database().ref("preguntasF").once('value').then(function(snapshot){
+firebase.database().ref("preguntasF").once('value').then(function (snapshot) {
     var data = snapshot.val();
-    for(var k in data) {
+    for (var k in data) {
         visualizarP += '<tr >';
         visualizarP += '<td >';
-        visualizarP += data[k].pregunta + '<td>';
+        visualizarP += data[k].pregunta + '<td></tr>';
+
+        if (data[k].Respuesta != "") {
+            visualizarP += '<tr>';
+            visualizarP += '<td> Respuesta: ';
+            visualizarP += data[k].Respuesta + '</td> </tr>';
+        }
     }
     var table = document.getElementById("tabla").innerHTML = visualizarP;
 });
+function setClave(clave) {
+    console.log(clave);
+    document.getElementById("clave").value = clave;
+}
+
+function guardarRespuesta() {
+    var clave = document.getElementById("clave").value;
+    var respuesta = document.getElementById("respuesta").value;
+    referencia.child(clave).update({
+        Respuesta: respuesta
+    });
+    alert("Publicado correctamente");
+    location.href = "/administrador/foroPreg.html";
+}

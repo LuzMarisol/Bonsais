@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro Administrador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="color: blue;">
+                                <h1>Preguntas de los usuarios</h1>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                </table>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" target="" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <spanaria-hidden="true">&times;</span>
+                        </button>
+                        <h2 class="modal-title" id="exampleModalLabel">Respondiendo a usuarios</h2>
+                    </div>
+                    <div class="modal-body">
+                        <input id="respuesta" type="email" placeholder="Ingrese su respuesta" class="form-control" style="color: blue;">
+                        <input type="hidden" id="clave" name="clave">
+                        <div class="mt-2"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary" onclick="guardarRespuesta()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div 
+        <!--Conexión con la base de datos de FIREBASE-->
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+              https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: "AIzaSyCF-MKz6J2s2Hsx-p1__dVDpINAnUvduik",
+                authDomain: "usuarios-b3f75.firebaseapp.com",
+                databaseURL: "https://usuarios-b3f75.firebaseio.com",
+                projectId: "usuarios-b3f75",
+                storageBucket: "usuarios-b3f75.appspot.com",
+                messagingSenderId: "348913451512",
+                appId: "1:348913451512:web:071687dd05cafd4014960d",
+                measurementId: "G-X0B5X37G19"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script src="/administrador/js/tabla.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

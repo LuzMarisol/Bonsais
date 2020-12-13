@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/custom.css" />
     <!-- wow Animation css -->
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="/Sistema_Bonsai/css/foro.css">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -61,8 +62,16 @@
                             <div class="make_appo"> <a class="btn white_btn" href="make_appointment.html">Inicio
                                     Admnistrador</a>
                             </div>
+                            <div class="float-left">
+                                <div class="make_appo"><a class="btn white_btn"
+                                        href="/ingreso Admin/loginadmi.html">Cerrar
+                                        Sesión</a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -141,6 +150,7 @@
         </div>
     </div>
     <!-- end inner page banner -->
+
     <!-- section -->
     <div class="section padding_layout_1 it_service_policy">
         <div class="container">
@@ -148,12 +158,14 @@
                 <div class="col-md-9">
                     <div class="row">
                         <div class="col-md-12">
+                            <!--Tabla en donde se reflejara la pregunta que se realize en el apartado de pregunta-->
                             <section id="contenido">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <h1> Foro</h1>
-                                            <!--<th></th> -->
+                                            <td>
+                                                <h1 id="titulo">Foro</h1>
+                                            </td>
                                         </tr>
                                     </thead>
                                     <tbody id="tabla">
@@ -162,9 +174,11 @@
                         </div>
                         <div class="col-md-12">
                             <div class="full">
+                                <!--Espacio donde se realiza la pregunta, que el usuario desee realizar-->
                                 <h3>Realiza una pregunta</h3>
                                 <textarea id="pregunta" name="comentarios" rows="5" cols="120"
                                     placeholder="Escribe aqui tu pregunta"></textarea>
+                                <!--Boton de enviar-->
                                 <button id="btnEnviar" class="boton">Enviar</button>
 
                             </div>
@@ -175,7 +189,7 @@
                             <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
                             <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
                             <!-- TODO: Add SDKs for Firebase products that you want to use
-              https://firebase.google.com/docs/web/setup#available-libraries -->
+                            https://firebase.google.com/docs/web/setup#available-libraries -->
                             <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
 
                             <script>
@@ -208,7 +222,8 @@
                                     <input class="form-control" placeholder="Search" type="text">
                                     <span class="input-group-addon">
                                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                    </span> </div>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="side_bar_blog">
@@ -217,23 +232,6 @@
                                 eius elitr
                                 consequ unturimperdiet.</p>
                             <a class="btn sqaure_bt" href="it_service.html">View Service</a>
-                        </div>
-                        <div class="side_bar_blog">
-                            <h4>OUR SERVICE</h4>
-                            <div class="categary">
-                                <ul>
-                                    <li><a href="it_data_recovery.html"><i class="fa fa-angle-right"></i> Data
-                                            recovery</a></li>
-                                    <li><a href="it_computer_repair.html"><i class="fa fa-angle-right"></i> Computer
-                                            repair</a></li>
-                                    <li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Mobile
-                                            service</a></li>
-                                    <li><a href="it_network_solution.html"><i class="fa fa-angle-right"></i> Network
-                                            solutions</a></li>
-                                    <li><a href="it_techn_support.html"><i class="fa fa-angle-right"></i> Technical
-                                            support</a></li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
