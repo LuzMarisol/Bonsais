@@ -1,6 +1,13 @@
 var pregunta = document.getElementById('pregunta');
 var enviarData = document.getElementById('btnEnviar');
 
+window.onload = function () {
+    var valor = sessionStorage.getItem("sesion");
+    if (valor != "True") {
+        document.getElementById("question").style.display = "none";
+    }
+};
+
 var dataBD = firebase.database().ref('preguntasF').push();
 enviarData.addEventListener('click', preguntasF);
 function preguntasF() {

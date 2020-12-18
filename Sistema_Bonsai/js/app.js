@@ -1,3 +1,4 @@
+
 function registrar() {
     var email = document.getElementById('email').value;
     var contrasena = document.getElementById('contrasena').value;
@@ -24,8 +25,13 @@ function ingreso() {
         .then(function () {
             /*verificar();*/
             console.log("Sesión iniciada");
+
+            sessionStorage.setItem('sesion', 'True');
+            var data = sessionStorage.getItem('sesion');
+            console.log("Inicio de sesión: " + data);
+
             alert("Bienvenido");
-            location.href = "/Sistema_Bonsai/index.html";
+            location.href = "/Sistema_Bonsai/foro.html";
         })
         .catch(function (error) {
             alert("Realiza tu registro para poder iniciar sesión")
