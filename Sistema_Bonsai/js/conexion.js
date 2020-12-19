@@ -7,6 +7,7 @@ function ingreso() {
             /*verificar();*/
             console.log("Sesión iniciada");
             alert("Bienvenido");
+            location.href = "admin_inicio.html";
             location.href = "/Sistema_Bonsai/admin_inicio.html";
         })
         .catch(function (error) {

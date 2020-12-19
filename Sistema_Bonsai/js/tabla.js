@@ -33,5 +33,5 @@ function guardarRespuesta() {
         Respuesta: respuesta
     });
     alert("Publicado correctamente");
-    location.href = "/administrador/foroPreg.html";
+    location.href = "/Sistema_Bonsai/foroPreg.html";
 }

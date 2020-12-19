@@ -1,4 +1,4 @@
- 
+
 function registrar() {
     var email = document.getElementById('email').value;
     var contrasena = document.getElementById('contrasena').value;
@@ -6,7 +6,7 @@ function registrar() {
     firebase.auth().createUserWithEmailAndPassword(email, contrasena)
         .then(function () {
             verificar();
-            alert("Registrado correctamente, por favor verifique su correo electronico para ingresar");
+            alert("Registrado correctamente");
             location.href = "/login/index.html";
         })
         .catch(function (error) {

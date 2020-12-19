@@ -22,14 +22,13 @@ function preguntasF() {
 
 var config = {
 
-    apiKey: "AIzaSyCF-MKz6J2s2Hsx-p1__dVDpINAnUvduik",
-    authDomain: "usuarios-b3f75.firebaseapp.com",
-    databaseURL: "https://usuarios-b3f75.firebaseio.com",
-    projectId: "usuarios-b3f75",
-    storageBucket: "usuarios-b3f75.appspot.com",
-    messagingSenderId: "348913451512",
-    appId: "1:348913451512:web:071687dd05cafd4014960d",
-    measurementId: "G-X0B5X37G19"
+        apiKey: "AIzaSyDOEyKjTqawZ2nxnvXGNN1KLhQYJP9eOh8",
+        authDomain: "bdbonsai-55379.firebaseapp.com",
+        databaseURL: "https://bdbonsai-55379-default-rtdb.firebaseio.com",
+        projectId: "bdbonsai-55379",
+        storageBucket: "bdbonsai-55379.appspot.com",
+        messagingSenderId: "1055742813594",
+        appId: "1:1055742813594:web:4e23c55027cf7a0b7f0623"
 
 };
 
